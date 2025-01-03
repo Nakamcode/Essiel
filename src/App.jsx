@@ -145,7 +145,10 @@ function App() {
           </div>
         </section>
 
-        <Pagination />
+        <div className="flex justify-between items-center mt-10">
+          <p>Showing 25 out of 762 pools...</p>
+          <Pagination />
+        </div>
 
         <PaymentMethod />
       </Container>
