@@ -6,6 +6,8 @@ import Pagination from "./components/atomic/Pagination";
 import PaymentMethod from "./components/ui/PaymentMethod";
 import Tab from "./components/ui/Tab";
 import SearchBar from "./components/atomic/SearchBar";
+import Instruction from "./components/ui/Instruction";
+import Swapper from "./components/ui/Swapper";
 
 function App() {
   return (
@@ -151,6 +153,11 @@ function App() {
         </div>
 
         <PaymentMethod />
+
+        <div className="grid grid-cols-[3fr_2fr] gap-5 items-center">
+          <Swapper />
+          <Instruction />
+        </div>
       </Container>
     </>
   );
